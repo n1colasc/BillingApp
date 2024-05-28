@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34407.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillingApp", "BillingApp\BillingApp.csproj", "{E0E04745-F37E-42E1-B3C1-A152F797B650}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillingTests", "BillingTests\BillingTests.csproj", "{3DBCD19E-E0DD-4D6C-8A3F-1FDD89A07788}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0E04745-F37E-42E1-B3C1-A152F797B650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0E04745-F37E-42E1-B3C1-A152F797B650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0E04745-F37E-42E1-B3C1-A152F797B650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0E04745-F37E-42E1-B3C1-A152F797B650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DBCD19E-E0DD-4D6C-8A3F-1FDD89A07788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DBCD19E-E0DD-4D6C-8A3F-1FDD89A07788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DBCD19E-E0DD-4D6C-8A3F-1FDD89A07788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DBCD19E-E0DD-4D6C-8A3F-1FDD89A07788}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A165C50-FA77-4F65-BA66-1A9A5B8F2830}
+	EndGlobalSection
+EndGlobal

@@ -3,6 +3,7 @@
 ## Descripción
 Este software está diseñado para cumplir un sistema de facturación básico, hecho en .NET Framework 4.8, integrado con una base de datos relacional diseñada en MySQL.
 
+---
 ## Ventajas
 
 ### Lenguaje
@@ -13,6 +14,7 @@ podemos detectar facilmente problemas al compilar el programa. Adiciolamente, al
 Como se indicaba en la descripción, al ser un sistema de facturación "básico" con poca probabilidad de ser escalado a algo más complejo, se ha seleccionado la base de datos relaciona MySQL en MariaDB
 con el fin de evitar costos, ya que al ser una tecnología open source podemos usar de forma gratuita sin problemas y tener facilidad en la integración del mismo.
 
+---
 ## Desventajas
 
 ### Lenguaje
@@ -23,7 +25,29 @@ desde el 18 de abril de 2019, podría presentar fallos de seguridad frente a .NE
 Si por algún motivo el software diseñado supera cierto umbral de datos, la base de datos podría verse afectada en su escalabilidad y rendimiento. Adicional, si se quiere ciertas funciones avanzadas
 (que puede brindar SQL server) o escalamiento horizontal (como falicita No-SQL) habría ciertas limitantes.
 
+---
 ## Arquitectura
+
+### Custom Onion Architecture
+La arquitectura por capas personalizada, nos permite tener independencia entre la jerarquía y dependencia del proyecto.
+
+![image](https://github.com/n1colasc/BillingApp/assets/38018367/006b9b91-8e02-485a-a56f-9d27d56e3e89)
+
+### BillingApp
+- Proyecto "padre" de la solución, es donde exponemos las API-REST, llaves de entorno ( Web.Config ) y guardamos la documentación nativa de .NET Framework
+
+### BillingBusiness
+- Proyecto que maneja la lógica principal del aplicativo. Es donde se manipulan los datos, se llaman utilidades, peticiones a la base de datos y, de ser
+  necesario, peticiones a APIs externas.
+
+### BillingDataAccess
+- Comunicación directa contra la base de datos, almacenamiento de los CRUD referente a las tablas.
+
+### BillingModel
+- Proyecto que maneja todos los modelos y el tipado de los demás proyectos, incluyendo servicios, útiles, modelos de tablas, etc.
+
+---
+## Patrones
 
 ### Patrones creacionales
 
